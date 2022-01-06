@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 100%;
+}
+body{
+    width: 100%;
+    background:  url(./img/carbon_fibre.png);
+}
+header{
+    display: flex;
+}
+#topLeft{
+    margin: 30px 15% 0 5%;
+}
+#topLeft img{
+    height: 120px;
+}
+#topCenter{
+    margin: auto 10%;
+}
+#topCenter ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#topCenter ul li{
+    margin: 0 5%;
+    list-style-type: none;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Staatliches', cursive;
+
+}
+#topCenter ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+#topRight{
+    margin-top: 60px;
+    margin-left: 15%;
+}
+#topRight a{
+    margin: 0 auto;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: #000;
+    font-size: 1.3rem;
+    font-family: 'Staatliches', cursive;
+}
+#topRight :hover {
+    opacity: 80%;
+    background-color: #000;
+    color: #fff;
+    
+}
