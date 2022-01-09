@@ -1,3 +1,7 @@
+<?php 
+    require_once 'connect.php';
+    $req = $db -> query('SELECT * FROM `shoes` ORDER BY `id_shoes` DESC LIMIT 10', PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,5 +32,28 @@
             <a href="#">Login</a>
         </section>
     </header>
+    <main>
+        <div class="CaroselImg">
+            <img src="./img/J1CP" alt="Image Jordan" class="image1">
+            <img src="./img/OffWhite" alt="Image OffWhite" class="image">
+            <img src="./img/J1PG" alt="Image Jordan" class="image">
+            <img src="./img/Yeezy" alt="Image Adidas" class="image">
+        </div>
+        <div id="center">
+            <div id="leftside">
+             <h2>Not the sneakers blog you need but the sneakers blog you deserve</h2>
+             <p>This is not the same sneakers blog, this is a special blog created by a sneakers fan to sneakers fans. Here you can find the last snekers released by three different brand: NIKE, JORDAN and ADIDAS. YOu can find in the sneakers section all the sneakers released(that we stocked in our database), with a little description, a resell  and retail price and a release date.</p>
+            </div>
+            <div id="rightside">
+                <?php foreach($req as $t){ ?>
+                    <figure>
+                        <img src ="<?= $t['photo']; ?>" alt="Sneakers shoes">
+                        <figcaption><?= $t['name_shoes'];?></figcaption>
+                    </figure>
+
+                <?php } ?>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

@@ -11,6 +11,7 @@ body{
 }
 header{
     display: flex;
+    margin-bottom: 5%;
 }
 #topLeft{
     margin: 30px 15% 0 5%;
@@ -57,4 +58,80 @@ header{
     background-color: #000;
     color: #fff;
     
+}
+/*************************
+*                        *
+*       MAIN             *
+*       CAROUSEL         *
+*                        *
+**************************/
+
+main .CaroselImg{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+@keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+
+
+
+.CaroselImg  img{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    opacity: 0;
+    animation: display 10s infinite;
+    width: 400px;
+    border-radius: 40px;
+    height: 550px;
+}
+.CaroselImg .image1{
+    width: 520px;
+    height: 550px;
+}
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
+/*************************
+*                        *
+*       MAIN             *
+*     10 LAST ELEMENTS   *
+*                        *
+**************************/
+#center{
+    /* width: 100%; */
+    height: 500px;
+    background-color: cornflowerblue;
+    margin: 5%;
+    display: flex;
 }
