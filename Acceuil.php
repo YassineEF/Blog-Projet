@@ -45,12 +45,11 @@
              <p>This is not the same sneakers blog, this is a special blog created by a sneakers fan to sneakers fans. Here you can find the last snekers released by three different brand: NIKE, JORDAN and ADIDAS. YOu can find in the sneakers section all the sneakers released(that we stocked in our database), with a little description, a resell  and retail price and a release date.</p>
             </div>
             <div id="rightside">
-                <?php foreach($req as $t){ ?>
-                    <figure>
-                        <img src ="<?= $t['photo']; ?>" alt="Sneakers shoes">
-                        <figcaption><?= $t['name_shoes'];?></figcaption>
+                <?php foreach($req as $sn){ ?>
+                    <figure class="imgsn">
+                        <img src ="<?= $sn['photo']; ?>" alt="Sneakers shoes">
+                        <figcaption><?= $sn['name_shoes']; ?></figcaption>
                     </figure>
-
                 <?php } ?>
             </div>
         </div>

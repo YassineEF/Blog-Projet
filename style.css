@@ -129,9 +129,14 @@ main .CaroselImg{
 *                        *
 **************************/
 #center{
-    /* width: 100%; */
-    height: 500px;
     background-color: cornflowerblue;
     margin: 5%;
     display: flex;
+}
+.imgsn{
+    display: inline-block;
+}
+#rightside img{
+    height: 200px;
+    width: 300px;
 }
