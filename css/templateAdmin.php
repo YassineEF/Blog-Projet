@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/styleTemp.css">
+    <link rel="stylesheet" href="../css/styleTemp.css">
     <!-- Title page -->
     <title>YassoShoes</title>
     <!-- Logo Site -->
-    <link rel="shortcut icon" href="./img/LogoBlack.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/LogoBlack.png" type="image/x-icon">
     <!--  Font Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,20 +19,20 @@
     <header>
    <div id="logo"></div>
     <div class="topnav" id="myTopnav">
-        <img src="./img/logoWhite.png" alt="Logo Header">
-        <a href="Acceuil.php?">Home</a>
-        <a href="Articles.php">Sneakers</a>
+        <img src="../img/logoWhite.png" alt="Logo Header">
+        <a href="AcceuilAdmin.php?">Home</a>
+        <a href="ArticlesAdmin.php">Sneakers</a>
         <div class="dropdown">
             <button class="dropbtn">Brand
                 <i class="fa fa-caret-down"></i>
             </button>
         <div class="dropdown-content">
-            <a href="Categories.php?brand=Jordan">Jordan</a>
-            <a href="Categories.php?brand=Nike">Nike</a>
-            <a href="Categories.php?brand=Adidas">Adidas</a>
+            <a href="CategoriesAdmin.php?brand=Jordan">Jordan</a>
+            <a href="CategoriesAdmin.php?brand=Nike">Nike</a>
+            <a href="CategoriesAdmin.php?brand=Adidas">Adidas</a>
         </div>
     </div> 
-        <a href="#about">Login</a>
+        <a href="#about">Logout</a>
         <div class="navbar" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -47,13 +47,13 @@
     </section>
     <footer>
         <div id="footUp">
-            <a href="#"><img src="./img/Email.png" alt="Email logo & link" class="logoCont"></a>
-            <a href="#"><img src="./img/fb.png" alt="Facebook logo & link" class="logoCont"></a>
-            <a href="#"><img src="./img/ig.png" alt="Instagram logo & link" class="logoCont"></a>
+            <a href="#"><img src="../img/Email.png" alt="Email logo & link" class="logoCont"></a>
+            <a href="#"><img src="../img/fb.png" alt="Facebook logo & link" class="logoCont"></a>
+            <a href="#"><img src="../img/ig.png" alt="Instagram logo & link" class="logoCont"></a>
         </div>
         <div id="footDown">
             <aside id="footLeft">
-                <a href="Acceuil.php?"><img src="./img/LogoBlack.png" alt="Logo Footer"></a>
+                <a href="AcceuilAdmin.php?"><img src="../img/LogoBlack.png" alt="Logo Footer"></a>
             </aside>
             <aside id="footCenter">
                 <h4>Not the sneakers blog you need but the sneakers blog you deserve</h4>
@@ -67,6 +67,6 @@
             </aside>
         </div>
     </footer>
-    <script src="./Js/script.js"></script>
+    <script src="../Js/script.js"></script>
 </body>
 </html>

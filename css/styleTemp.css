@@ -90,7 +90,7 @@ body{
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #000;
+    background-color: #fff;
     margin: 6px 0;
     transition: 0.4s;
     
@@ -154,9 +154,111 @@ body{
     #footRight ul{
         font-size: 1rem !important;
     }
+    #center{
+        /* display: block; */
+        text-align: center;
+    }
+    .imageSn{
+        display: block !important;
+    }
+    #textSn{
+        margin-right: 0 !important;
+    }
   }
+/*************************
+*                        *
+*    Sneakers Section    *
+*                        *
+**************************/
+#center{
+    margin: 5%;
+}
+/* #center .imageSn:nth-child(odd){
+    display: flex;
+    justify-content: flex-end;
+} */
+#center h1{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.imageSn img{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px 50px;
+}
+/* .imageSn img:nth-child(odd){
+    display: flex;
+    justify-content: flex-end;
+} */
+.imageSn{
+    margin-bottom: 5%;
+    display: flex;
+}
 
+#textSn{
+    color: #fff;
+    margin: 0 2%;
+    margin-right: 15%;
+    line-height: 25px;
+}
+#textSn h3{
+    display: inline-block;
+    font-size: 1.5rem;
 
+}
+#textSn h3:nth-child(odd){
+    margin-left: 5%;
+}
+#textSn h2{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+
+}
+#textSn a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4rem;
+    background-color: rgb(25, 202, 149, 0.5);
+    padding: 0 10px;
+    border-radius: 15px 50px 30px 5px;
+    color: #000;
+}
+#textSn a:hover{
+    background-color: rgb(25, 202, 149, 1);
+  }
+#textSn .upBtn{
+    background-color: rgb(58, 121, 16, 0.5);
+    margin: 0 2%;
+}
+#textSn .upBtn:hover{
+    background-color: rgb(58, 121, 16,1);
+}
+#textSn .delBtn{
+    background-color: rgb(250, 0, 0, 0.5);
+}
+#textSn .delBtn:hover{
+    background-color: rgb(250, 0, 0, 1);
+}
+#add{
+    width: 100%;
+    margin: 3% 0 5%;
+    text-align: center;
+}
+.crtBtn{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4rem;
+    background-color: rgba(0, 240, 168, 0.5);
+    padding: 0 10px;
+    border-radius: 15px 50px 30px 5px;
+    color: #000;
+    text-align: center; 
+}
+.crtBtn:hover{
+    background-color: rgb(25, 202, 149, 1);
+  }
 /*************************
 *                        *
 *       FOOTER           *
@@ -220,3 +322,96 @@ body{
     left: -5px;
 
 }
+/*************************
+*                        *
+*          FORM          *
+*                        *
+**************************/
+
+#formulaire{
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:  2%;
+    border-radius: 10px 50px;
+}
+
+
+ input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px 50px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .row h3{
+      padding: 3% 0;
+    letter-spacing: 4px;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
