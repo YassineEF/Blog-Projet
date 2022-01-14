@@ -32,7 +32,7 @@
             <a href="Categories.php?brand=Adidas">Adidas</a>
         </div>
     </div> 
-        <a href="#about">Login</a>
+        <a href="login.php">Login</a>
         <div class="navbar" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>

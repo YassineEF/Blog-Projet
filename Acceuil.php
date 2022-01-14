@@ -41,8 +41,8 @@
             <a href="Categories.php?brand=Nike">Nike</a>
             <a href="Categories.php?brand=Adidas">Adidas</a>
         </div>
-    </div> 
-        <a href="#about">Login</a>
+    </div>
+        <a href="login.php">Login</a>
         <div class="navbar" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>

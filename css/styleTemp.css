@@ -336,7 +336,7 @@ body{
 }
 
 
- input[type=text], select, textarea {
+ input[type=text],input[type=password], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -351,7 +351,7 @@ label {
     display: inline-block;
     font-size: 1.5rem;
 }
-input[type=text], select, textarea {
+input[type=text], input[type=password], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -399,7 +399,15 @@ input[type=text], select, textarea {
       padding: 3% 0;
     letter-spacing: 4px;
   }
-
+  input {
+    border: 2px solid currentcolor;
+  }
+  input:invalid {
+    border: 2px dashed red;
+  }
+  input:invalid:focus {
+    background-image: linear-gradient(rgb(255, 0, 43), rgb(255, 0, 0));
+  }
   
   /* Clear floats after the columns */
   .row:after {
@@ -407,11 +415,31 @@ input[type=text], select, textarea {
     display: table;
     clear: both;
   }
-  
+  #log{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 2%;
+  }
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
-      margin-top: 0;
+      margin-top: 2%;
     }
+  }
+  #regBtn{
+      margin-left: 5%;
+  }
+  #regBtn a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4rem;
+    background-color: rgb(25, 202, 149, 0.5);
+    padding: 0 10px;
+    border-radius: 15px 50px 30px 5px;
+    color: #000;
+}
+#regBtn a:hover{
+    background-color: rgb(25, 202, 149, 1);
   }

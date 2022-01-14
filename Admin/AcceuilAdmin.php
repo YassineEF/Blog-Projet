@@ -42,7 +42,7 @@
             <a href="CategoriesAdmin.php?brand=Adidas">Adidas</a>
         </div>
     </div> 
-        <a href="#about">Logout</a>
+        <a href="../logout.php">Logout</a>
         <div class="navbar" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
