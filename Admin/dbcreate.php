@@ -2,10 +2,6 @@
 
 require_once '../connect.php';
 
-
-// $req = $db->query("SELECT * FROM `shoes` WHERE  1");
-// $pre = $req->fetch(PDO::FETCH_ASSOC);
-
 if(isset($_POST['submit'])){
     
     
@@ -22,7 +18,7 @@ if(isset($_POST['submit'])){
 
     if(empty($name_shoes) || empty($retail) || empty($resell) || empty($date_relase) || empty($ds) || empty($brand) || empty($name)){
         header('Location: ArticlesAdmin.php');
-        echo "Insert all the table please";
+        echo '<body onLoad="alert(\'Insert all the data please\')">';
     }else{
         if(in_array($_FILES['img']['type'], $arrayType)){
             move_uploaded_file($_FILES['img']['tmp_name'], $name);
